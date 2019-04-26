@@ -1,0 +1,20 @@
+{
+  "name": "osiaspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Osia-me/osiaSpace.git"
+  },
+  "author": "Osia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Osia-me/osiaSpace/issues"
+  },
+  "homepage": "https://github.com/Osia-me/osiaSpace#readme"
+}
