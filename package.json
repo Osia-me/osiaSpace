@@ -2,10 +2,10 @@
   "name": "osiaspace",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "app.js",
   "scripts": {
-    "start": "index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "develop": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Osia-me/osiaSpace/issues"
   },
-  "homepage": "https://github.com/Osia-me/osiaSpace#readme"
+  "homepage": "https://github.com/Osia-me/osiaSpace#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-favicon": "^2.0.1",
+    "nodemon": "^1.18.11"
+  }
 }
