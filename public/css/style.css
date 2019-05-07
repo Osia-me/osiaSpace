@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Courier', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -32,12 +32,11 @@ body {
 }
 
 .header {
-  height: 80vh;
-  background-image: linear-gradient(to right bottom, rgba(182, 139, 170, 0.6), rgba(103, 65, 123, 0.3));
+  height: 93vh;
+
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 100%)
 }
 .logo-box {
   position: absolute;
@@ -50,7 +49,7 @@ body {
 
 .text-box {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -70%);
   text-align: center;
@@ -58,7 +57,7 @@ body {
 .heading-primary {
   color: #fff;
   backface-visibility: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .heading-primary-main, .heading-primary-sub {
   display: block;
@@ -68,17 +67,16 @@ body {
 
 .heading-primary-main {
   font-size: 29px;
-  letter-spacing: 9px;
+  letter-spacing: 8px;
   text-transform: uppercase;
-  text-shadow: 0px 0px 6px rgba(255,255,255,0.4);
 
   animation: movedown 2s ease-out;
 }
 
 .heading-primary-sub {
   font-size: 20px;
-  letter-spacing: 13.2px;
-  text-shadow: 0px 0px 6px rgba(255,255,255,0.4);
+  letter-spacing: 9.8px;
+
 
   animation-name: moveup;
   animation-duration: 2s;
@@ -130,18 +128,17 @@ body {
 /* hover over -moves up */
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+  box-shadow: 0 10px 20px rgba(0,0,0,.6);
 }
 /* click - moves down, like pressed btn*/
 .btn:active{
   transform: translateY(1px);
-  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,.6);
 }
 
 .btn-black {
-  background-color: #221d1f;
+  background-color: rgba(34, 29, 31, 0.6);
   color: #fff;
-
 }
 
 .btn::after {
@@ -157,7 +154,7 @@ body {
   transition: all .5s;
 }
 .btn-black::after {
-  background-color: #221d1f;
+  background-color: rgba(34, 29, 31, 0.4);
 }
 
 .btn:hover::after {
