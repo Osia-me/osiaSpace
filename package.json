@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "develop": "nodemon app.js"
+    "develop": "nodemon app.js",
+    "sass": "node-sass sass/main.scss public/css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
     "express": "^4.16.4",
     "express-favicon": "^2.0.1",
     "nodemon": "^1.18.11"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
   }
 }

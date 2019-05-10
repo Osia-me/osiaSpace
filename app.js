@@ -1,7 +1,7 @@
 const express     = require('express'),
       favicon     = require('express-favicon'),
       app         = express(),
-      port        = process.env.PORT || 3000;
+      port        = process.env.PORT || 5000;
 
 //Set-up ejs
 app.set("view engine", "ejs");
