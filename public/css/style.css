@@ -57,7 +57,6 @@ body {
   font-size: 1.8rem;
   line-height: 1.7;
   color: #fff;
-  background-color: #221d1f;
   overflow: hidden; }
 
 .header-primary {
@@ -89,11 +88,46 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.header-tertiary {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: transparent;
+  background-image: linear-gradient(to right bottom, rgba(34, 29, 31, 0.7), rgba(181, 141, 109, 0.7));
+  display: inline-block;
+  -webkit-background-clip: text; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-lg {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 5rem; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 2rem; }
+
+.section-about {
+  background-color: #f7f7f7;
+  margin: -10rem;
+  padding: 15rem 0;
+  color: #444;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 88%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 88%, 0% 100%); }
+
+.section-soft-skills {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(34, 29, 31, 0.7), rgba(34, 29, 31, 0.4)), url("../img/bg-2.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 10%, 100% 0, 100% 88%, 0% 100%); }
 
 .btn {
   /* hover over -moves up */
@@ -138,13 +172,31 @@ body {
     animation: moveBtn .5s ease-out 2.5s;
     animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #221d1f;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #221d1f;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #221d1f;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(34, 29, 31, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(34, 29, 31, 0.15);
+  transform: translateY(0); }
+
 .header {
-  height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(34, 29, 31, 0.7), rgba(34, 29, 31, 0.4)), url("../img/bg.jpg");
+  height: 120vh;
+  background-image: linear-gradient(to right bottom, rgba(34, 29, 31, 0.7), rgba(34, 29, 31, 0.4)), url("../img/bg-1.jpg");
   background-size: cover;
   background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
+  position: relative; }
   .header__text-box {
     position: absolute;
     top: 50%;
@@ -152,25 +204,56 @@ body {
     transform: translate(-50%, -70%);
     text-align: center; }
 
-.about {
-  background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -15vh;
-  color: #444; }
+.composition__photo {
+  width: 60%;
+  box-shadow: 0 1.5rem 4rem rgba(34, 29, 31, 0.4);
+  border-radius: 1rem;
+  transition: all .2s; }
+  .composition__photo:hover {
+    transform: scale(1.2) translateY(-0.5rem);
+    box-shadow: 0 1.5rem 4rem rgba(34, 29, 31, 0.5); }
+
+.soft-skill-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  color: #000;
+  transition: transform .3s; }
+  .soft-skill-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    color: transparent;
+    background-image: linear-gradient(to right bottom, rgba(34, 29, 31, 0.7), rgba(181, 141, 109, 0.7));
+    display: inline-block;
+    -webkit-background-clip: text; }
+  .soft-skill-box:hover {
+    transform: translateY(-1.5rem) scale(1.2); }
 
 .row {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem)/2);
-    background-color: #221d1f;
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
     float: left; }
-    .row .col-1-of-2:not(:last-child) {
+    .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-
-::after {
-  content: "";
-  display: table;
-  clear: both; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }

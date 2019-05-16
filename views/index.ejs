@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="stylesheet" href="/css/icon-font.css">
   <link rel="stylesheet" href="/css/style.css">
   <title>Osia - Web developer portfolio</title>
 </head>
 <body>
-
 
   <!-- Heading with welcome speach -->
     <header class="header">
@@ -24,35 +24,76 @@
       </div>
     </header>
 
+<!-- Main part of website -->
     <main>
-      <section class="about">
-        <div class="u-center u-margin-bottom-8">
+      <!-- Story about me -->
+      <section class="section-about">
+        <div class="u-center u-margin-bottom-lg">
           <h2 class="header-secondary">
             Hi, I'm Olha. Nice to meet you!
           </h2>
         </div>
         <div class="row">
           <div class="col-1-of-2">
-            Text content
+            <h3 class="header-tertiary u-margin-bottom-sm">Front-end development</h3>
+            <p class="paragraph">I'm front-end developer with a passion to JavaScript, intuitive UI and beautiful, clean and reusable code. Using HTML, CSS and SASS, Javascript and React.js, I build fast, interactive websites. </p>
+            <h3 class="header-tertiary u-margin-bottom-sm">Full-stack</h3>
+            <p class="paragraph"> In order to create complete, easy and native full-stack REST api's I'm using Node.js with Express.js and MongoDB with Mongoose.js.
+            <h3 class="header-tertiary u-margin-bottom-sm">Marketing background</h3>
+            <p class="paragraph"> While all of my attention is on front-end development currently, I do have marketing background. It helps me to create web products from the customer point of view.</p>
+
+            <a href="https://www.linkedin.com/in/olha-melnykovych/" target="_blank" class="btn-text">Contact me &rarr;</a>
           </div>
-          <div class="col-1-of-2">
-            Image
+          <div class="col-1-of-2 u-center">
+            <div class="composition"><img src="img/Me4.jpg" alt="portrait" class="composition__photo"></div>
           </div>
         </div>
       </section>
+
+      <!-- Soft skills -->
+      <section class="section-soft-skills">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="soft-skill-box">
+              <i class="soft-skill-box__icon icon-basic-key"></i>
+              <h3 class="header-tertiary u-margin-bottom-sm">Problem solving</h3>
+              <p class="soft-skill-box__text">Challenges in the projects makes me feel curious. <br>I never stop searching for more advanced solutions.</p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="soft-skill-box">
+              <i class="soft-skill-box__icon icon-basic-settings"></i>
+              <h3 class="header-tertiary u-margin-bottom-sm">New techniks dd</h3>
+              <p class="soft-skill-box__text">Challenges in the projects makes me feel curious. <br>I never stop searching for more advanced solutions.</p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="soft-skill-box">
+              <i class="soft-skill-box__icon icon-basic-compass"></i>
+              <h3 class="header-tertiary u-margin-bottom-sm">Problem solving</h3>
+              <p class="soft-skill-box__text">Challenges in the projects makes me feel curious. <br>I never stop searching for more advanced solutions.</p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="soft-skill-box">
+              <i class="soft-skill-box__icon icon-basic-tablet"></i>
+              <h3 class="header-tertiary u-margin-bottom-sm">Mobile first design</h3>
+              <p class="soft-skill-box__text">Challenges in the projects makes me feel curious. <br>I never stop searching for more advanced solutions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Technical skills -->
+    <section class="section-hard-skills">
+      <div class="u-center u-margin-bottom-lg">
+        <h2 class="header-secondary">Technical skills</h2>
+      </div>
+    </section>
+
     </main>
 
-    <!-- <section class="about" id="about">
-      <h2>Hi, I'm Olha. Nice to meet you!</h2>
-      <p class="about__text">I'm full-stack web developer with a passion to JavaScript, programming and beautiful code.</p>
-      <p class="about__text"> I am a fast learner, have analytical mindset, passion for problem-solving. </p>
-      <p class="about__text">I never stop searching for more advanced solutions.</p>
-      <p class="about__text">From my marketing background I know how to create products from the customer point of view.</p>
-    </section> -->
 
-  <script>
-    window.location.hash = "";
-  </script>
   <script src="/js/particles.min.js"></script>
   <script src="/js/particles-config.js"></script>
 </body>
