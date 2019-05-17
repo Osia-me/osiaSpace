@@ -1,7 +1,3 @@
-html {
-  overflow: scroll;
-  overflow-x: hidden;
-}
 
 body {
 
@@ -9,13 +5,12 @@ body {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.7;
-  color: $font-color;
-  overflow: hidden;
+  color: $white;
 }
 
 
 .header-primary {
-  color: $font-color;
+  color: $white;
   backface-visibility: hidden;
   margin-bottom: 6rem;
 

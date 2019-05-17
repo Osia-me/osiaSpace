@@ -39,10 +39,28 @@
   }
   &--black {
     background-color: rgba($back-color, 0.6);
-    color: $font-color;
+    color: $white;
+    text-transform: uppercase;
+
 
     &::after {
       background-color: rgba($back-color, 0.6);
+    }
+  }
+  &--white {
+    background-color: rgba($white, 0.6);
+    color: $black;
+    text-transform: uppercase;
+
+
+    &::after {
+      background-color: rgba($white, 0.6);
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      background-color: $white;
+      box-shadow: 0 1rem 2rem rgba($black,.6);
     }
   }
 
@@ -57,6 +75,8 @@
   &:link,
   &:visited{
     font-size: $default-font-size;
+
+
     color: $back-color;
     display: inline-block;
     text-decoration: none;
@@ -66,7 +86,7 @@
   }
   &:hover {
     background-color: $back-color;
-    color: $font-color;
+    color: $white;
     box-shadow: 0 1rem 2rem rgba($back-color, .15);
     transform: translateY(-2px);
   }
